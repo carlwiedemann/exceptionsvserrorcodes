@@ -5,9 +5,9 @@ Examples inspired by
 * [Exceptions vs. status returns](http://nedbatchelder.com/text/exceptions-vs-status.html)
 * [Exceptions in the rainforest](http://nedbatchelder.com/text/exceptions-in-the-rainforest.html)
 
-### proper-error.php
+### properly-handle-error.php
 
-    $ php -f proper-error.php
+    $ php -f properly-handle-error.php
     Calling with apple...
     Life is good with apple
     
@@ -18,9 +18,9 @@ Examples inspired by
     Calling with orange...
     Whoa something bad happened, we're done.
 
-### proper-exception.php
+### properly-handle-exception.php
 
-    $ php -f proper-exception.php
+    $ php -f properly-handle-exception.php
     Calling with apple...
     Life is good with apple
     
