@@ -20,13 +20,13 @@ array_map(function ($value) {
     $foo_result = foo($value);
   }
   catch (FooWarningException $e) {
-    echo "Something abnormal happened, but we're ok\n";
+    echo "Something abnormal happened, but we're ok.\n";
   }
   catch (FooEmergencyException $e) {
     echo "Whoa something bad happened, we're done.\n";
     exit();
   }
 
-  echo "Life is good with $value\n\n";
+  echo "Life is good with $value.\n\n";
 
 }, $values);

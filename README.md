@@ -9,11 +9,11 @@ Examples inspired by
 
     $ php -f properly-handle-error.php
     Calling with apple...
-    Life is good with apple
+    Life is good with apple.
     
     Calling with banana...
-    Something abnormal happened, but we're ok
-    Life is good with banana
+    Something abnormal happened, but we're ok.
+    Life is good with banana.
     
     Calling with orange...
     Whoa something bad happened, we're done.
@@ -22,11 +22,11 @@ Examples inspired by
 
     $ php -f properly-handle-exception.php
     Calling with apple...
-    Life is good with apple
+    Life is good with apple.
     
     Calling with banana...
-    Something abnormal happened, but we're ok
-    Life is good with banana
+    Something abnormal happened, but we're ok.
+    Life is good with banana.
     
     Calling with orange...
     Whoa something bad happened, we're done.
@@ -35,24 +35,24 @@ Examples inspired by
 
     $ php -f improperly-handle-error.php
     Calling with apple...
-    Life is good with apple
+    Life is good with apple.
     
     Calling with banana...
-    Something abnormal happened, but we're ok
-    Life is good with banana
+    Something abnormal happened, but we're ok.
+    Life is good with banana.
     
     Calling with orange...
-    Life is good with orange
+    Life is good with orange.
 
 ### improperly-handle-exception.php
 
     $ php -f improperly-handle-exception.php
     Calling with apple...
-    Life is good with apple
+    Life is good with apple.
     
     Calling with banana...
-    Something abnormal happened, but we're ok
-    Life is good with banana
+    Something abnormal happened, but we're ok.
+    Life is good with banana.
     
     Calling with orange...
     PHP Warning:  array_map(): An error occurred while invoking the map callback in /Users/c4rl/_src/exceptionsvserrorcodes/improperly-handle-exception.php on line 32
@@ -88,19 +88,19 @@ Examples inspired by
 
     $ php -f no-handle-error.php
     Calling with apple...
-    Life is good with apple
+    Life is good with apple.
     
     Calling with banana...
-    Life is good with banana
+    Life is good with banana.
     
     Calling with orange...
-    Life is good with orange
+    Life is good with orange.
 
 ### no-handle-exception.php
 
     $ php -f no-handle-exception.php
     Calling with apple...
-    Life is good with apple
+    Life is good with apple.
     
     Calling with banana...
     PHP Warning:  array_map(): An error occurred while invoking the map callback in /Users/c4rl/_src/exceptionsvserrorcodes/no-handle-exception.php on line 23

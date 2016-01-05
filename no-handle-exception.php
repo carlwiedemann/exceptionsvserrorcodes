@@ -18,6 +18,6 @@ array_map(function ($value) {
 
   foo($value);
 
-  echo "Life is good with $value\n\n";
+  echo "Life is good with $value.\n\n";
 
 }, $values);
