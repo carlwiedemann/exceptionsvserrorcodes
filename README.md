@@ -1,6 +1,13 @@
 # Exceptions vs Error Codes
 
-Examples inspired by
+There's a historical debate about best practice for error handling in imperative
+code: Exceptions or Status Returns (Error Codes).
+
+Here I present some examples as to why I believe exceptions are superior.
+
+*tl;dr: Exceptions fail loudly, and that's a good thing.*
+
+Examples inspired by:
 
 * [Exceptions vs. status returns](http://nedbatchelder.com/text/exceptions-vs-status.html)
 * [Exceptions in the rainforest](http://nedbatchelder.com/text/exceptions-in-the-rainforest.html)
