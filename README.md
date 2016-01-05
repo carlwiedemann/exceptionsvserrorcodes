@@ -9,11 +9,11 @@ Examples inspired by
 
     $ php -f proper-error.php
     Calling with apple...
-    Life is good with apple - 0
+    Life is good with apple
     
     Calling with banana...
     Something abnormal happened, but we're ok
-    Life is good with banana - 1
+    Life is good with banana
     
     Calling with orange...
     Whoa something bad happened, we're done.
@@ -22,11 +22,11 @@ Examples inspired by
 
     $ php -f proper-exception.php
     Calling with apple...
-    Life is good with apple - 0
+    Life is good with apple
     
     Calling with banana...
     Something abnormal happened, but we're ok
-    Life is good with banana - 0
+    Life is good with banana
     
     Calling with orange...
     Whoa something bad happened, we're done.
@@ -35,38 +35,51 @@ Examples inspired by
 
     $ php -f improper-error.php
     Calling with apple...
-    Life is good with apple - 0
+    Life is good with apple
     
     Calling with banana...
     Something abnormal happened, but we're ok
-    Life is good with banana - 1
+    Life is good with banana
     
     Calling with orange...
-    Life is good with orange - 2
-    
-    ➜  errors_exceptions
+    Life is good with orange
 
 ### improper-exception.php
 
     $ php -f improper-exception.php
     Calling with apple...
-    Life is good with apple - 0
+    Life is good with apple
     
     Calling with banana...
     Something abnormal happened, but we're ok
-    Life is good with banana - 0
+    Life is good with banana
     
     Calling with orange...
-    PHP Fatal error:  Uncaught exception 'FooEmergencyException' in /Users/c4rl/_src/errors_exceptions/exception.inc:22
-    Stack trace:
-    #0 /Users/c4rl/_src/errors_exceptions/improper-exception.php(20): foo('orange')
-    #1 {main}
-      thrown in /Users/c4rl/_src/errors_exceptions/exception.inc on line 22
+    PHP Warning:  array_map(): An error occurred while invoking the map callback in /Users/c4rl/_src/exceptionsvserrorcodes/improper-exception.php on line 32
+    PHP Stack trace:
+    PHP   1. {main}() /Users/c4rl/_src/exceptionsvserrorcodes/improper-exception.php:0
+    PHP   2. array_map() /Users/c4rl/_src/exceptionsvserrorcodes/improper-exception.php:32
     
-    Fatal error: Uncaught exception 'FooEmergencyException' in /Users/c4rl/_src/errors_exceptions/exception.inc on line 22
-    
-    FooEmergencyException:  in /Users/c4rl/_src/errors_exceptions/exception.inc on line 22
+    Warning: array_map(): An error occurred while invoking the map callback in /Users/c4rl/_src/exceptionsvserrorcodes/improper-exception.php on line 32
     
     Call Stack:
-        0.0002     228104   1. {main}() /Users/c4rl/_src/errors_exceptions/improper-exception.php:0
-        0.0010     252144   2. foo() /Users/c4rl/_src/errors_exceptions/improper-exception.php:20
+        0.0004     228992   1. {main}() /Users/c4rl/_src/exceptionsvserrorcodes/improper-exception.php:0
+        0.0010     249440   2. array_map() /Users/c4rl/_src/exceptionsvserrorcodes/improper-exception.php:32
+    
+    PHP Fatal error:  Uncaught exception 'FooEmergencyException' in /Users/c4rl/_src/exceptionsvserrorcodes/exception.inc:22
+    Stack trace:
+    #0 /Users/c4rl/_src/exceptionsvserrorcodes/improper-exception.php(20): foo('orange')
+    #1 [internal function]: {closure}('orange')
+    #2 /Users/c4rl/_src/exceptionsvserrorcodes/improper-exception.php(32): array_map(Object(Closure), Array)
+    #3 {main}
+      thrown in /Users/c4rl/_src/exceptionsvserrorcodes/exception.inc on line 22
+    
+    Fatal error: Uncaught exception 'FooEmergencyException' in /Users/c4rl/_src/exceptionsvserrorcodes/exception.inc on line 22
+    
+    FooEmergencyException:  in /Users/c4rl/_src/exceptionsvserrorcodes/exception.inc on line 22
+    
+    Call Stack:
+        0.0004     228992   1. {main}() /Users/c4rl/_src/exceptionsvserrorcodes/improper-exception.php:0
+        0.0010     249440   2. array_map() /Users/c4rl/_src/exceptionsvserrorcodes/improper-exception.php:32
+        0.0016     250640   3. {closure:/Users/c4rl/_src/exceptionsvserrorcodes/improper-exception.php:15-32}() /Users/c4rl/_src/exceptionsvserrorcodes/improper-exception.php:32
+        0.0016     250640   4. foo() /Users/c4rl/_src/exceptionsvserrorcodes/improper-exception.php:20

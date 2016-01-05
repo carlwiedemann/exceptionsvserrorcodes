@@ -12,7 +12,7 @@ $values = [
   'orange',
 ];
 
-foreach ($values as $value) {
+array_map(function ($value) {
 
   echo "Calling with $value...\n";
 
@@ -27,6 +27,6 @@ foreach ($values as $value) {
     exit();
   }
 
-  echo "Life is good with $value - $foo_result\n\n";
+  echo "Life is good with $value\n\n";
 
-}
+}, $values);
