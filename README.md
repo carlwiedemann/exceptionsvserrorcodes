@@ -1,4 +1,4 @@
-# Exceptions vs Error codes
+# Exceptions vs Error Codes
 
 Examples inspired by
 
