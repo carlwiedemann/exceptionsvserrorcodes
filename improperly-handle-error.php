@@ -3,7 +3,7 @@
 include 'error.inc';
 
 /**
- * Properly handling error codes.
+ * Improperly handling error codes.
  */
 
 $values = [

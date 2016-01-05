@@ -3,7 +3,7 @@
 include 'exception.inc';
 
 /**
- * Properly handling exceptions.
+ * Improperly handling exceptions.
  */
 
 $values = [
