@@ -97,7 +97,8 @@ fail loudly.
 ## No handling
 
 Examples of code without handling error codes and exceptions. Again, exceptions
-fail loudly.
+fail loudly, even those exceptions that do not necessarily indicate an unstable
+system (i.e. `FooWarningException`).
  
 ### no-handle-error.php
 
