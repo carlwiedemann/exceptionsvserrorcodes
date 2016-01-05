@@ -5,6 +5,10 @@ Examples inspired by
 * [Exceptions vs. status returns](http://nedbatchelder.com/text/exceptions-vs-status.html)
 * [Exceptions in the rainforest](http://nedbatchelder.com/text/exceptions-in-the-rainforest.html)
 
+## Proper handling
+
+Examples of code properly handling error codes and exceptions.
+
 ### properly-handle-error.php
 
     $ php -f properly-handle-error.php
@@ -30,6 +34,12 @@ Examples inspired by
     
     Calling with orange...
     Whoa something bad happened, we're done.
+    
+## Improper handling
+
+Examples of code improperly handling error codes and exceptions. Notice that
+when error codes are improperly handled they fail silently, while exceptions
+fail loudly.
 
 ### improperly-handle-error.php
 
@@ -83,6 +93,11 @@ Examples inspired by
         0.0010     249440   2. array_map() /Users/c4rl/_src/exceptionsvserrorcodes/improperly-handle-exception.php:32
         0.0016     250640   3. {closure:/Users/c4rl/_src/exceptionsvserrorcodes/improperly-handle-exception.php:15-32}() /Users/c4rl/_src/exceptionsvserrorcodes/improperly-handle-exception.php:32
         0.0016     250640   4. foo() /Users/c4rl/_src/exceptionsvserrorcodes/improperly-handle-exception.php:20
+
+## No handling
+
+Examples of code without handling error codes and exceptions. Again, exceptions
+fail loudly.
  
 ### no-handle-error.php
 
