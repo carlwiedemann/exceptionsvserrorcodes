@@ -7,7 +7,6 @@ Examples inspired by
 
 ### proper-error.php
 
-    ➜  errors_exceptions
     $ php -f proper-error.php
     Calling with apple...
     Life is good with apple - 0
@@ -21,7 +20,6 @@ Examples inspired by
 
 ### proper-exception.php
 
-    ➜  errors_exceptions
     $ php -f proper-exception.php
     Calling with apple...
     Life is good with apple - 0
@@ -35,7 +33,6 @@ Examples inspired by
 
 ### improper-error.php
 
-    ➜  errors_exceptions
     $ php -f improper-error.php
     Calling with apple...
     Life is good with apple - 0
